@@ -1,0 +1,227 @@
+
+/*
+Author: Andre
+Date: 29 MAR 2018
+*/
+
+/*------------------------------------------------------*/
+
+/*Set the common styles for title and footer            */
+
+/*------------------------------------------------------*/
+
+.styleHeadFoot {
+    background-image: url(../img/TopPage.jpg);
+    background-size: cover;
+    border: 1px solid rgb(200, 200, 200);
+    text-shadow: 4px 4px 4px #000000;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: table;
+    max-width: 1200px;
+    margin: auto;
+}
+
+* {
+    /* set all to border-box*/
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------*/
+
+/*HEADER  STYLE                                         */
+
+/*------------------------------------------------------*/
+
+.classMainTitle {
+    margin-top: 10px;
+    font-family: 'Bangers', serif;
+    text-align: center;
+    color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mainTitle {
+    font-size: 400%;
+    margin: 0px;
+    padding-top: 35px;
+    padding-bottom: 0px;
+
+}
+
+.mainTitleBottom {
+    font-size: 200%;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    width: 250%;
+}
+
+
+/*------------------------------------------------------*/
+
+/*FOOTER STYLE                                          */
+
+/*------------------------------------------------------*/
+
+.footerTank {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.copyright {
+    text-align: left;
+    font-family: 'Acme';
+    font-size: 1em;
+    color: white;
+}
+
+/*------------------------------------------------------*/
+
+.panContainer {
+    display: table;
+    overflow: auto;
+    /* to show scrolls if necessary*/
+}
+
+.panDefine {
+    font-family: 'Acme';
+    display: table-cell;
+    vertical-align: top;
+    font-size: 1em;
+    border: 1px solid olive;
+}
+
+.centerPan {
+    max-width: 40vw;
+    min-width: 40vw;
+    max-height: 50vh;
+    min-height: 50vh;
+    text-align: justify;
+    background-color: darkslategrey;
+    overflow: hidden;
+}
+
+.centerPan p,
+h2,
+h3,
+h4 {
+    text-indent: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 40vw ;
+}
+
+.leftPan,
+.rightPan {
+    max-width: 12vw;
+    min-width: 12vw;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    padding: 8px;
+    border: 1px solid rgb(200, 200, 200);
+    overflow: hidden;
+}
+
+.leftPan ul {
+    width: 100%;
+    height: 20px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.pageButtons nav li a {
+    color: white;
+    display: block;
+    float: none;
+    background-color: darkslategrey;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid rgb(200, 200, 200);
+    overflow: hidden;
+}
+
+.pageButtons li a:hover {
+    background-color: rgb(21, 36, 36);
+    color: lightgray;
+}
+
+.authorPic {
+    padding: 0px;
+    margin: 1em;
+    border: 1px solid rgb(200, 200, 200);
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/*------------------------------------------------------*/
+
+/*REGISTRATION                                          */
+
+/*------------------------------------------------------*/
+
+.regTable {
+    color: white;
+    padding: 2em 5em;   
+}
+
+.regTable tr td {
+    padding: 0.5em;
+}
+
+.regButton {
+    color: white;
+    font-family: 'Acme';
+    width: 8em;
+    height: 3em; 
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(68, 68, 68);
+}
+
+
+.frmRegister {
+    padding: 1em;
+    clear: both;
+    color: white;
+  }
+ 
+  .frmRegister td {
+    padding: 0.5em;
+    clear: both;
+  }
+
+.regButton:hover {
+    background-color: rgb(21, 36, 36);
+    color: lightgray;
+}
+
+input {
+    border: 2px solid;
+    border-color: darkgreen;
+}
+
+input:focus {
+    border: 2px solid;
+    border-color: gold;
+}
+
+errorIco {
+    padding: 0px;
+
+}

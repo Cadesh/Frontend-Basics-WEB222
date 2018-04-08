@@ -1,0 +1,219 @@
+<!-- 
+I declare that my assignment is wholly my own work in accordance with Seneca
+Academic Policy. No part of this assignment has been copied manually or 
+electronically from any other source (including web sites) except for the
+information supplied by the WEB222 instructor and / or made available in this
+assignment for my use.
+I also declare that no part of this assignment has been distributed to other
+students.
+Name: Andre
+Dated: 26 MAR 2018
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8" />
+
+
+    <title>Rosa</title>
+
+    <link href="css/normalize1.css" rel="stylesheet" />
+    <script src="js/pageJS.js"></script>
+    <script src="js/registration.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+</head>
+
+<body>
+    <div class=container>
+        <header class="classMainTitle styleHeadFoot">
+
+            <table id="tblTitle">
+                <tr>
+                    <th rowspan="2">
+                        <img class=logo src="img/logo.svg" alt="Logo Img">
+                    </th>
+                    <td>
+                        <h1 class=mainTitle> The Tank Store </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="mainTitleBottom">The right place to build your own army!</p>
+                    </td>
+                </tr>
+            </table>
+
+        </header>
+        <div class="panContainer registerPan">
+            <section class="leftPan panDefine pageButtons">
+                <h3>Menu</h3>
+                <nav>
+                    <div id="loadMenuButtons"></div>
+                </nav>
+            </section>
+
+            <section class="panDefine centerPan">
+
+                <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+                <h3>REGISTRATION FORM</h3>
+                <form class=frmRegister name=signup onsubmit="return validateForm()" method=post action="https://httpbin.org/post">
+
+                    <input type="hidden" name="lastName" id="lastName" value="Rosa" />
+                    <input type="hidden" name="studentId" id="studentId" value="115997173" />
+                    <table id="frmTable">
+
+                        <tr>
+                            <td>
+                                <label title="Bust be 8 characters long, must start with a character, must have at least 1 digit and 1 uppercase." for=psw1>Password:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="psw1" name="password1" required="required" autofocus="autofocus"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label title="Bust be 8 characters long, must start with a character, must have at least 1 digit and 1 uppercase." for=psw2>
+                                    Retype Password:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="psw2" name="password2" required="required"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label title="Begin with alphabetic char and minimum of 6 characters." for=name>Name:</label>
+                            </td>
+                            <td>
+                                <input type=text id=name name=name required="required"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label title="Address">Address:</label>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label title="Unit Number." for=unitNum>Unit:</label>
+                                        </td>
+                                        <td>
+                                            <input type=text id=unitNum name=unitNumber required size="4">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label title="Street Number." for=stNum>Number:</label>
+                                        </td>
+                                        <td>
+                                            <input type=text id=stNum name=stNumber required size="4"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label title="Street Name." for=street>Street:</label>
+                                        </td>
+                                        <td>
+                                            <input type=text id=street name=street required> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label title="Zip code, Canadian format, space optional." for=zip>Zip Code:</label>
+                                        </td>
+                                        <td>
+                                            <input type=text id=zip name=zip required>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <label title="Begin with a letter, can not have spaces and dashes at the end." for=cit>City:</label>
+                                        </td>
+                                        <td>
+                                            <input type=text id=cit name=city required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label title="Province." for=province>Province:</label>
+                                        </td>
+                                        <td>
+                                            <select id=province name=province>
+                                                <option value="1">Alberta</option>
+                                                <option value="2">British Columbia</option>
+                                                <option value="3">Manitoba</option>
+                                                <option value="4">New Brunswick</option>
+                                                <option value="5">Newfoundland and Labrador</option>
+                                                <option value="6">Nova Scotia</option>
+                                                <option selected value="7">Ontario</option>
+                                                <option value="8">Prince Edward Island</option>
+                                                <option value="9">Quebec</option>
+                                                <option value="10">Saskatchewan</option>
+                                                <option value="11">Northwest Territories</option>
+                                                <option value="12">Nunavut</option>
+                                                <option value="13">Yukon</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label title="Email validated by HTML5." for=mail>Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" id="mail" name="email" required> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label title="Phone 3 digits - 3 digits - 4 digits." for=phone>Phone Number:</label>
+                            </td>
+                            <td>
+                                <input type=text id=phone name=phonenumber maxlength="12" placeholder="###-###-####" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input class="regButton" type="submit" value="Submit" />
+                            </td>
+                            <td>
+                                <input class="regButton" type="reset" value=" Clear " onclick="clearerrors()" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+
+            </section>
+
+            <section class="rightPan panDefine">
+                <h4>MESSAGE AREA</h4>
+                <div id="errors">
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class=clear></div>
+
+        <footer class="footerTank styleHeadFoot fontDefine">
+            <h4 class=copyright>Copyright &copy; 2018 Andre R</h4>
+        </footer>
+    </div>
+    <!-- class container-->
+
+</body>
+
+
+</html>
